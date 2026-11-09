@@ -1,0 +1,144 @@
+        <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="curriculo">
+
+        <header class="cabecalho">
+            <div class="perfil">
+            </div>
+
+            <div class="dados">
+                <h1 id="nome">Seu Nome Completo</h1>
+                <h2>Desenvolvedor Web Júnior</h2>
+
+                <p>📧 igorfelix@gmail.com</p>
+                <p>📱 (62) 62999-34012</p>
+                <p>📍 Anápolis - Goiás</p>
+
+             
+                <button id="editar" type="button">Editar nome</button>
+                <button id="sair" type="button">Sair</button>
+            </div>
+        </header>
+
+        <section class="secao">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou uma pessoa dedicada, organizada e com vontade de aprender.
+                Tenho interesse em tecnologia e desenvolvimento web.
+                Busco uma oportunidade para desenvolver minhas habilidades
+                e contribuir com a equipe.
+            </p>
+        </section>
+
+       
+        <section class="secao">
+            <h2>Objetivo Profissional</h2>
+            <p>
+                Conquistar uma oportunidade profissional na área de tecnologia,
+                colocando em prática meus conhecimentos e adquirindo novas
+                experiências.
+            </p>
+        </section>
+
+      
+        <section class="secao">
+            <h2>Experiência Profissional</h2>
+
+            <div class="item">
+                <h3>Nome da Empresa</h3>
+                <p class="data">Janeiro de 2025 - Dezembro de 2025</p>
+                <p><strong>Cargo:</strong> Assistente Administrativo</p>
+                <ul>
+                    <li>Organização de documentos e arquivos.</li>
+                    <li>Atendimento ao cliente.</li>
+                    <li>Auxílio nas atividades da equipe.</li>
+                </ul>
+            </div>
+        </section>
+
+      
+        <section class="secao">
+            <h2>Formação Acadêmica</h2>
+
+            <div class="item">
+                <h3>Nome da Instituição</h3>
+                <p>Ensino Médio cursando</p>
+                <p class="data">Período matutino</p>
+            </div>
+        </section>
+
+      
+        <section class="secao">
+            <h2>Cursos Complementares</h2>
+            <ul>
+                <li>HTML5 e CSS3</li>
+                <li>Informática Básica</li>
+                <li>Lógica de Programação</li>
+            </ul>
+        </section>
+
+   
+        <section class="secao">
+            <h2>Habilidades</h2>
+
+            <div class="habilidades">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Comunicação</span>
+                <span>Trabalho em equipe</span>
+                <span>Organização</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>Currículo profissional • 2026</p>
+        </footer>
+
+    </div>
+
+   <div class="formulario" id="areaFormulario" hidden>
+            <h2>Editar perfil</h2>
+            <form id="formPerfil">
+
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome"required>
+
+
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso"required>
+               
+                <label for="email">Email:</label>
+                <input type="text" id="email"required>
+
+
+                <label for="numero">numero:</label>
+                <input type="tel" id="numero" placeholder="(11) 99999-9999" required>
+               
+                <label for="cidade">cidade:</label>
+                <input type="text" id="cidade" required>
+
+
+                <button type="submit">Salvar Perfil</button>
+
+
+                <button typw="button" id="cancelar">
+                    Cancelar
+                </button>
+            </form>
+        </div>
+
+    <script src="java/script.js"></script>
+
+</body>
+</html>

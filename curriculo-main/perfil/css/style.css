@@ -1,0 +1,293 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edf2;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+.curriculo {
+    max-width: 850px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #00000015;
+}
+
+
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #0c3e3c;
+}
+
+.perfil img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid#0c3e3c;
+}
+
+.dados h1 {
+    margin: 0;
+    color: #0c3e3c;
+    font-size: 30px;
+}
+
+.dados h2 {
+    margin: 5px 0 15px;
+    color: #555;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.dados p {
+    margin: 5px 0;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+
+
+
+.secao {
+    margin-top: 25px;
+}
+
+.secao h2 {
+    margin-bottom: 12px;
+    padding-bottom: 7px;
+    color: #176b87;
+    font-size: 20px;
+    border-bottom: 1px solid #d7e1e5;
+}
+
+.secao p {
+    margin-top: 8px;
+}
+
+
+
+.item {
+    margin-bottom: 18px;
+}
+
+.item h3 {
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.data {
+    color: #777;
+    font-size: 13px;
+}
+
+
+
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.habilidades span {
+    padding: 7px 13px;
+    color: #176b87;
+    background-color: #e5f2f6;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+
+#editar,
+#sair {
+    margin-top: 15px;
+    margin-right: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+
+#editar {
+    background-color: #028688;
+}
+
+#editar:hover {
+    background-color: #12546a;
+    transform: translateY(-2px);
+}
+
+
+
+#sair {
+    background-color: #22886651;
+}
+
+#sair:hover {
+    background-color: #0056393a;
+    transform: translateY(-2px);
+}
+
+
+#editar:active,
+#sair:active {
+    transform: scale(0.97);
+}
+
+
+
+.seletor-cores {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.seletor-cores label {
+    color: #333;
+    font-size: 13px;
+}
+
+.seletor-cores input[type="color"] {
+    width: 45px;
+    height: 35px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+
+footer {
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .curriculo {
+        padding: 22px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .perfil img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .dados h1 {
+        font-size: 25px;
+    }
+
+    .dados h2 {
+        font-size: 16px;
+    }
+
+    .secao h2 {
+        font-size: 18px;
+    }
+
+    #editar,
+    #sair {
+        margin-right: 4px;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .seletor-cores {
+        justify-content: center;
+    }
+}
+
+
+
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .curriculo {
+        max-width: none;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .secao {
+        break-inside: avoid;
+    }
+
+  
+
+    #editar,
+    #sair,
+    .seletor-cores {
+        display: none;
+    }
+}
+.formulario
+   { width: 450px; max-width: 100%;padding: 30px;background-color: white; border-radius: 17px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+.formulario h2 { text-align: center;margin-top: 15px;}
+.formulario label{ display: block;margin-top: 12px;margin-bottom: 6px;}
+.formulario imput,.formulario textarea{
+    display: block;width: 100%;padding: 11px;
+    border: 1px solid #cccccc;border-radius: 6px;
+    font-family: Arial, sans-serif;font-size: 15;
+}
+.formulario textarea{
+    
+}
